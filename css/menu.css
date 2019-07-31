@@ -1,0 +1,139 @@
+
+
+
+
+
+
+
+
+
+.center
+{
+margin:auto;
+width:60%;
+background-color:#E8E8E8  ;
+}
+
+caption {caption-side:top;}
+
+.modalDialog {
+	position: fixed;
+	color:black;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+	width: 400px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: #fff;
+	background: -moz-linear-gradient(#fff, #999);
+	background: -webkit-linear-gradient(#fff, #999);
+	background: -o-linear-gradient(#fff, #999);
+}
+.close {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover { background: #00d9ff; }
+
+#logout:hover
+{
+background:#B32D19;
+}
+
+nav ul ul {
+	display: none;
+}
+
+nav ul li:hover > ul {
+		display: block;
+	
+	}
+	nav ul {
+	width:100%;
+	background: #3D3D3D;
+	z-index:500;
+	margin-top:5px;
+	margin-bottom:0px;
+	box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
+	padding: 0 0px;
+	border-radius: 10px;  
+	list-style: none;
+	position: relative;
+	display: inline-table;
+	color:white;
+}
+	nav ul:after {
+		content: ""; clear: both; display: block;
+	}
+	nav ul li {
+	float: left;
+}
+	nav ul li:hover {
+	border-radius: 5px; 
+		background: #638299;
+	
+	}
+		nav ul li:hover a {
+			color: #fff;
+		}
+	
+	nav ul li a {
+		display: block; padding: 25px 40px;
+		color: #C7C7C7; text-decoration: none;
+	}
+	nav ul ul {
+	background: #3D3D3D; border-radius: 0px; margin-top:0px; padding: 0;
+	position:absolute;  width:150px;top: 100%;
+}
+	nav ul ul li {
+		float: none; 
+		border-top: 1px solid #6b727c;
+		border-bottom: 1px solid #575f6a;
+		position: relative;
+	}
+		nav ul ul li a {
+			padding: 15px 40px;
+			color: #fff;
+		}	
+			nav ul ul li a:hover {
+				background: #4b545f;
+			}
+			nav ul ul ul {
+	position: absolute; left: 100%; top:0;
+}
+
+
+
